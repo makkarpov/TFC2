@@ -30,7 +30,7 @@ public class BlockEffect extends BlockTerra
 		IBlockState block = world.getBlockState(pos);
 		if(block.getValue(META_PROPERTY) == EffectType.Acid)
 			return 4;
-		else return getLightValue(state, world, pos);
+		else return super.getLightValue(state, world, pos);
 	}
 
 	@Override
